@@ -1,0 +1,63 @@
+@use "../../scss/common/BackgroundColors";
+.wrapper{
+  width: 100%;
+  display: grid;
+  grid-template-columns: .5fr 1fr .5fr .5fr .5fr;
+  align-items: center;
+  margin-bottom: 25px;
+
+  img{
+    max-width: 120px;
+    justify-self: center;
+
+  }
+  .title{
+    font-size: 1.4rem;
+    font-weight: bold;
+
+  }
+  .counter{
+    justify-self: center;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    font-weight: 700;
+
+    button{
+      border-radius: 50%;
+      border: #fcc100 1px solid;
+      width: 30px;
+      height: 30px;
+      font-size: 1.2rem;
+      background-color: #fff;
+      color: #fcc100;
+      cursor: pointer;
+    }
+  }
+  .price{
+    justify-self: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 5px;
+  }
+  .delete{
+    justify-self: center;
+    button{
+      border-radius: 50%;
+      border: #adacac 1px solid;
+      width: 30px;
+      height: 30px;
+      font-size: 1.3rem;
+      background-color: #fff;
+      color: #adacac;
+      cursor: pointer;
+      transform: rotate(45deg);
+
+
+      &:hover{
+        border: #3f3f3f 1px solid;
+        color: #3f3f3f;
+      }
+    }
+  }
+}
